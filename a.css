@@ -1,0 +1,116 @@
+*{
+    font-family: sans-serif;
+    margin: 0; 
+    padding: 0;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    padding: 20px 0;
+    background-image: url(use.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 200px;
+    height: 145px;
+    cursor: pointer;
+    opacity: 1;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 50px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+} 
+.navbar ul li a::after{
+    content: '';
+    height: 3px;
+    width: 0px;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul  li a:hover::after{
+    width: 100%;
+}
+.container{
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+    color: black;
+}
+.content-section{
+   float: left;
+    width: 50%;
+    margin-left: 70px;
+}
+.h1{
+    align-items: center;
+}
+.image-section{
+    float: right;
+    width: 40%;
+   
+}
+.image-section img{
+    width: 80%;
+    height: auto;
+    
+}
+
+
+
+.content-section .content h3{
+    margin-top: 20px;
+    color: black;
+}
+.content-section .content p{
+     margin-top: 10px;
+     font-family: sans-serif;
+     font-size: 18px;
+     line-height: 1.5;   
+     text-align: justify;                   
+}
+
+.content-section .social{
+    margin-top: 40px;
+}
+.content-section .social i{
+    color: black;
+    font-size: 30px;
+    padding: 0px 10px;
+}
+.content-section .social i:hover{
+    color: black;
+}
+@media screen and (max-width: 768px){
+    .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .content-section{
+        float: none;
+        width: 100%;
+     }
+}
